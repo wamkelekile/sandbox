@@ -30,6 +30,12 @@ public class Sandbox {
         System.out.println("Would you like to buy another car? | Answer YES or NO");
         String answer = scanner.nextLine();
 
+        switcher(answer);
+
+    }
+
+    private static void switcher(String answer)
+    {
         switch (answer.toUpperCase())
         {
             case "YES":
@@ -41,7 +47,6 @@ public class Sandbox {
             default:
                 System.out.println("Sorry, your answer was wrong!");
         }
-
     }
 }
 
